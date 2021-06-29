@@ -1,2 +1,2 @@
 # ProjectEuler
-This repo contains my solution of questions from ProjectEuler
+This repo contains my solution of questions from ProjectEuler.net
