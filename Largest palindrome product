@@ -1,0 +1,53 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+int rev(int m)
+{
+   int r=0,k; 
+    while(m!=0)
+    {
+     k=m%10;
+     r=r*10+k;
+     m=m/10;
+    }
+    return r;
+}
+int main(){
+    int t; 
+    scanf("%d",&t);
+    for(int a0 = 0; a0 < t; a0++){
+        int n; 
+        scanf("%d",&n);
+     int i,l,k,p,h,r,j;
+    for(i=100000;i<n;i++)
+    {
+      p=i;
+      r=0;
+      while(p!=0)
+      {
+          k=p%10;
+          r=r*10+k;
+          p=p/10;
+      }
+      if(r==i)
+      {
+        for(j=100;j<=999;j++)
+        {
+            if(i%j==0)
+            {
+               h=i/j;
+               if(h>=100&&h<=999)
+               {
+                   l=r;
+               }
+            }
+        }
+      }
+    }
+    printf("%d\n",l);
+    }
+}
